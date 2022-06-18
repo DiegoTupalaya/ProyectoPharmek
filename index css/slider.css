@@ -1,0 +1,130 @@
+/* slider */
+
+.slider {
+    position: relative;
+    margin-top: 85px;
+}
+
+.slider ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.slider ul li {
+    position: relative;
+    display: none;
+    height: 80vh;
+}
+
+.slider ul li img {
+    height: 100%;
+    width: 100%;
+}
+
+.slider ul li span {
+    position: absolute;
+    bottom: 0;
+    background: hsl(0, 1%, 72%, .1);
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* buttons */
+
+.slider .buttons {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: white;
+}
+
+.slider .buttons .next {
+    font-size: 2rem;
+    right: 30px;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #008556;
+    border-radius: 50%;
+    transition: 0.5s all ease;
+}
+
+.slider .buttons .prev {
+    font-size: 2rem;
+    left: 30px;
+    position: absolute;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background: #008556;
+    border-radius: 50%;
+    transition: 0.5s all ease;
+}
+
+.slider .buttons .next:hover {
+    transform: scale(1.1);
+}
+
+.slider .buttons .prev:hover {
+    transform: scale(1.1);
+}
+
+
+/* slider animation */
+
+.slider ul li {
+    animation-name: fade;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .2
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media (max-width:1024px) {
+    .slider {
+        margin-top: 60px;
+    }
+    .slider ul li {
+        position: relative;
+        display: none;
+        height: 60vh;
+    }
+}
+
+@media (max-width:768px) {
+    .slider {
+        margin-top: 60px;
+    }
+    .slider ul li {
+        position: relative;
+        display: none;
+        height: 40vh;
+    }
+}
+
+@media (max-width:480px) {
+    .slider {
+        margin-top: 60px;
+    }
+    .slider ul li {
+        position: relative;
+        display: none;
+        height: 30vh;
+    }
+}

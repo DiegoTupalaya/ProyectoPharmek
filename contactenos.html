@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmek</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <script type="text/javascript" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="img/logo-cabecera.png" />
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="index css/barra-nav.css">
+    <link rel="stylesheet" href="index css/img-principal.css">
+    <link rel="stylesheet" href="index css/productos.css">
+    <link rel="stylesheet" href="index css/footer.css">
+    <link rel="stylesheet" href="index css/distribuidores.css">
+    <link rel="stylesheet" href="css/contactenos.css">
+
+
+
+    <script src="https://kit.fontawesome.com/4c6bfec502.js" crossorigin="anonymous"></script>
+    <script defer src="js/index.js"></script>
+
+
+    <script src="js/codigo.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/script-distribuidores.js"></script>
+    <script src="js/loading.js"></script>
+
+
+</head>
+
+<body>
+    <div id="contenedor_carga">
+        <div id="carga"></div>
+    </div>
+
+    <div class="centrado" id="onload">
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/message/LNBJUOAXJBV4D1" class="btn-wsp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <header class="header">
+
+        <nav class="nav ">
+            <a class="logo-link " href="index.html"> <img class="logo " src="img/logo.jpg " alt=" "></a>
+            <button class="toggle ">
+                <i class="fas fa-bars "></i>
+            </button>
+            <ul class="menu">
+                <li class="menu-item "> <a class="menu-link " id="productos" href="productos.html">Productos</a>
+                </li>
+                <li class="menu-item "><a class="menu-link " id="distribuidores" href="distribuidores.html">Distribuidores</a>
+                </li>
+                <li class="dropdown menu-item "><a class=" menu-link " href="contactenos.html">Contáctenos</a>
+                    <ul class="dropdown-content ">
+                        <div class="drop ">
+                            <li class="menu-item "><a class="menu-link " href="trabaje-con-nosotros.html">Trabaje con nosotros </a></li>
+                        </div>
+                    </ul>
+                </li>
+
+                <li class="menu-item-sobre "><a class="menu-link-sobre " href="trabaje-con-nosotros.html">Trabaje con nosotros</a></li>
+                <li class="menu-item "><a class="menu-link " href="nosotros.html">Nosotros</a></li>
+
+            </ul>
+            <section class="redes ">
+                <a class="redes-link " href="https://www.facebook.com/Pharmek-Laboratories-SAC-186380124730653 "><i class="fab fa-facebook-square redes-item "></i></a>
+                <a class="redes-link " href="https://www.instagram.com/pharmek_oficial_/ "><i class="fab fa-instagram redes-item "></i></a>
+                <a class="redes-link " href="https://wa.me/message/LNBJUOAXJBV4D1 "><i class="fab fa-whatsapp redes-item "></i></a>
+            </section>
+        </nav>
+    </header>
+
+    <section class="container-contactenos">
+        <section class="productos-titulo ">
+            <h1>Contáctenos</h1>
+        </section>
+        <div class="container-contactenos-global">
+            <div class="container-contactenos-titulo">
+                <div class="container-informacion-personal">
+                    <p>Información personal</p>
+                </div>
+                <div class="container-informacion-personal-espacio">
+
+                </div>
+            </div>
+            <div class="container-contactenos-contenido">
+
+                <div class="container-contactenos-formulario">
+                    <div class="container--contactenos-formulario">
+                        <form class="formulario" action="enviar_contactenos.php" method="post">
+
+                            <input class="formulario-input" type="text" name="Nombre" placeholder="Nombre" required>
+                            <input class="formulario-input" type="text" name="Apellido" placeholder="Apellido" required>
+                            <input class="formulario-input" type="text" name="Edad" placeholder="Edad" required>
+                            <input class="formulario-input" type="text" name="Correo electronico" placeholder="Correo electrónico" required>
+                            <input class="formulario-input" type="text" name="Telefono" placeholder="Teléfono" required>
+                            <input class="formulario-input" type="text" name="Ocupacion" placeholder="Ocupación" required>
+                            <input class="formulario-input" type="text" name="Asunto" placeholder="Asunto" required>
+                            <textarea class="formulario-input-mensaje" name="Mensaje" placeholder="Escriba su mensaje aquí" required></textarea>
+                            <input class="formulario-input-enviar" type="submit" value="ENVIAR" id="boton">
+
+                        </form>
+                    </div>
+                </div>
+                <div class="container-contactenos-mapa">
+                    <div class="container--contactenos-mapa">
+                        <iframe class="contactenos-mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d487.57749855627856!2d-77.02219066785051!3d-12.13813271657013!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x74f6307fa3294706!2sProyecto%20Connect%20%7C%20Inmobiliaria%20Edifica!5e0!3m2!1ses-419!2spe!4v1624846760578!5m2!1ses-419!2spe"
+                            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <div class="container-contactenos-direccion">
+                        <p> <strong>Dirección:</strong> Av Almirante Miguel Grau 1380, Of 706 Barranco</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <section class="footer-contenido ">
+            <section class="footer-contacto ">
+                <h2>CONTACTO</h2>
+                <section class="contenido-contacto ">
+                    <p><i class="fas fa-phone "></i>Central:01-3453590</p>
+                    <p><i class="fas fa-mobile-alt "></i>Móvil:974-587-086</p>
+                    <p><i class="fas fa-envelope "></i>ventas@pharmek.com</p>
+                </section>
+            </section>
+            <section class="footer-redes ">
+                <h2>REDES SOCIALES</h2>
+                <a href="# "><i class="fab fa-facebook-square footer-redes-item "></i></a>
+                <a href="# "><i class="fab fa-instagram footer-redes-item "></i></a>
+                <a href="# "> <i class="fab fa-whatsapp footer-redes-item "></i></a>
+            </section>
+            <section class="footer-pharmek ">
+                <p>PHARMEK</p>
+            </section>
+        </section>
+        <section class="footer-derechos ">
+            &copy2021 Pharmek. Todos los derechos reservados.
+        </section>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            var contenedor = document.getElementById('contenedor_carga');
+
+            contenedor.style.visibility = 'hidden';
+            contenedor.style.opacity = '0';
+        }
+    </script>
+
+</body>
